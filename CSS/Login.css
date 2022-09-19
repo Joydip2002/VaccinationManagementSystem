@@ -1,0 +1,147 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+html{
+    font-size: 62.5%;
+    background-color: rgb(33, 16, 107);
+}
+#p{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height:100vh;
+}
+#c{
+    position: absolute;
+    z-index: 1;
+    height: 40rem;
+    width: 25rem;
+    background-color: rgb(33, 16, 107);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    overflow: hidden;
+    border-radius: 1rem;
+    
+}
+#c::before{
+    position: absolute;
+    z-index: -1;
+    width: 50rem;
+    height: 50rem;
+    background-image: conic-gradient(from 90deg, violet 10%,rgba(229, 235, 51, 0.09) 80%,rgb(136, 255, 0) 100%);
+     
+    /* background-image: conic-gradient(from 90deg, red,green,yellow,blue); */
+
+    /* background-image: linear-gradient(to left,red,yellow); */
+    content: '';
+    /* left:12rem;
+    bottom: 27rem; */
+    animation: rotate 4s linear infinite;
+    animation-direction:normal;
+    transition: 0.5s;
+ 
+}
+
+#c:after{
+    position: absolute;
+    z-index: -1;
+    height: 39rem;
+    width: 24rem;
+    background-color: rgb(33, 16, 107);
+    border-radius: 1rem;
+    content: '';
+   
+    
+}
+@keyframes rotate {
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+#p1{
+   
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 40rem;
+    width: 26rem;
+     
+    background-color:aqua ;
+    /* border: .5rem solid blue;*/
+    animation: rotate 2s linear infinite;
+    overflow: hidden;
+}
+
+
+ form input{
+    margin: .5rem;
+ }
+ion-icon{
+    font-size: 2rem;
+    color: white;
+}
+
+h2{
+    color:white;
+}
+label{
+    /* position: relative; */
+    color:white;
+    font-size: 1.3rem;
+    /* top: 2.7rem;
+    left: 2rem; */
+}
+h3{
+    margin-left: .5rem;
+    color: white;
+}
+h3 span a{
+    color:red;
+}
+.social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .5rem;
+    border-radius: 3rem;
+     border: .1rem solid white;
+    background-color: rgb(33, 16, 107);
+    animation: animate 1s linear infinite;
+}
+.social:hover{
+ cursor: pointer;
+    background-color: rgb(61, 148, 255);
+}
+
+.s1:hover{
+   cursor: pointer;
+    background-color: rgb(11, 78, 159);
+}
+input{
+    border: none;
+    color: white;
+    outline: none;
+    padding: .8rem;
+    border-radius: 1rem;
+    background-image: linear-gradient(to right,blue,violet);
+}
+#btn{
+    text-align: center;
+    margin-top: 2rem;;
+}
+#btnsubmit{
+    padding: 1rem 7rem;
+}
+#btnsubmit:hover{
+    cursor: pointer;
+    background-image:linear-gradient(to bottom,red,yellow) ;
+}
+#checkbox{
+    text-align: center;
+    color: white;
+}

@@ -1,0 +1,281 @@
+:root{
+    --navcolor:rgb(34, 33, 33);
+    --navccolor:red;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    /* background-image:url(../Assets/baylor-covid-vaccine.jpg); */
+    /* background: linear-gradient(360deg,rgb(40, 255, 76),rgb(251, 255, 24)); */
+    background-size: cover;
+    scroll-behavior:smooth;
+      
+
+    background: linear-gradient(45deg,rgb(0, 255, 64),orange);
+}
+html{
+    font-size: 62.5%;
+   
+
+}
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5rem;
+    background: var(--navcolor);
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    
+}
+#cnav{
+    width:70rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 1rem;
+    /* flex-wrap: wrap; */
+    /* height: 5rem; */
+     
+    /* background: var(--navccolor); */
+}
+a:hover{
+    color: rgb(195, 65, 255);
+     
+}
+a{
+    text-decoration: none;
+    font-size: 2rem;
+    color: white;
+}
+header{
+    display: grid;
+    place-items: center;
+}
+header>p{
+    
+    text-align: center;
+    font-size: 3rem;
+     
+    animation: animate1 4s linear infinite;
+    animation-direction: alternate;
+}
+span{
+    color: rgb(39, 145, 187);
+}
+@keyframes animate1 {
+    0%{
+        transform:translateX(5rem);
+    }
+}
+main{
+    display: grid;
+    place-items: center;
+}
+#container{
+    width: 90rem;
+    /* border: .1rem solid black; */
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(42rem,1fr));
+    grid-template-rows:20rem 20rem;
+    gap: 2rem;
+    /* grid-template-rows: 3rem 10rem 20rem 6rem ;
+    grid-template-columns: repeat(3,1fr) 15rem; */
+}
+
+.t2{
+    grid-row: 1/3;
+    grid-column: 2/3;
+}
+.t4{
+    grid-column: 1/-1;
+}
+#card{
+    /* margin: 1rem; */
+    border-radius:2rem;
+    /* height: 20rem; */
+    /* width: 25rem; */
+    box-shadow: 0 0 1.1rem rgba(33, 33, 33, 2);
+    background:rgba(255,255,255,0.2);
+    backdrop-filter: blur(4rem);
+}
+
+#card:hover{
+    box-shadow: 0 0 1.1rem rgba(33, 33, 33, 2);
+}
+main{
+    margin: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+#image{
+    height: 11rem;
+    /* width: 25rem; */
+    background-image: url(../Assets/healthcare.jpg);
+ 
+    background-size: cover;
+}
+#details{
+    height: 8rem;
+
+}
+p{
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 1.2rem;
+}
+button{
+    padding: 0 5rem;
+    border-radius: 1rem;
+}
+#lnkBtn a:hover{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    outline: none;
+    cursor: pointer;
+}
+#lnkBtn a{
+    color: rgb(249, 31, 31);
+    border:.1rem solid black;
+    background: #fff;
+    border-radius: 2rem;
+    padding: .5rem 1rem;
+}
+
+.item{
+    border-radius:2rem;
+    /* background-color: aqua; */
+}
+ 
+#fromName{
+    font-size:2rem;
+    font-weight: 700;
+}
+input{
+    margin: 1rem;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    outline: none;
+    padding:1rem;
+}
+
+form{ 
+    /* background:rgba(0 0 0 0.8);
+    backdrop-filter: blur(80rem); */
+
+    background: rgba( 255, 255, 255, 0.3 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 6px );
+    -webkit-backdrop-filter: blur( 6px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    height: 43rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    /* background-color: aqua; */
+}
+#social ion-icon{
+    font-size: 2rem;
+    margin: 1rem;
+    
+}
+p>ion-icon{
+    color: rgb(0, 0, 0);
+}
+#facebook-icon{
+    color: rgb(67, 181, 242);
+    
+    background-color:black;
+    padding: .5rem;
+    border-radius: 1rem;
+    animation:animate 1s linear 2s;
+    transition: 0.5s;
+}
+#google-icon{
+    color:red;
+    background-color:black;
+    padding: .5rem;
+    border-radius: 1rem;
+    transition: 0.5s;
+}
+#facebook-icon:hover { 
+        transform: translateY(-2rem);
+        cursor: pointer;
+}
+#google-icon:hover { 
+    transform: translateY(-2rem);
+    cursor: pointer;
+}
+#btn{
+    border: none;
+    padding: .8rem 4rem;
+    box-shadow: 0 0 0  #d80286;
+    /* transition: ease-out 0.4s; */
+    /* display: inline-block;
+    -webkit-transition: ease-out 0.4s;
+    -moz-transition: ease-out 0.4s;
+    transition: ease-out 0.4s; */
+}
+#btn:hover{
+    background-image: radial-gradient( yellow,green);
+    border-radius: 2rem;
+    cursor: pointer;
+}
+#signin{
+    color: rgb(44, 0, 240);
+    font-weight: 700;
+}
+#signin:hover{
+    color: black;
+    cursor: pointer;
+}
+@media (max-width:690px) {
+    #container{
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media (max-width:415px) {
+    a{
+       font-size: 1.5rem;
+    }
+    header p{
+        font-size: 2rem;
+        font-weight:700;
+        animation: animate2 1s linear infinite;
+        animation-direction: alternate;
+    }
+    @keyframes animate2 {
+        0%{
+            transform: translateX(2rem);
+        }
+    }
+}
+@media (min-width:150px) and (max-width:235px) {
+    #container{
+      margin-left: 5rem;
+      margin-right: 5rem;
+    }
+}
+#fp{
+    font-size: 1rem;
+
+}
+#fp:hover{
+    color: blue;
+}
+ 
+
+ 

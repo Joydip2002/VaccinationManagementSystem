@@ -1,0 +1,59 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(../Assets/baylor-covid-vaccine.jpg);
+    background-size: cover;
+}
+html{
+    font-size: 62.5%;
+}
+#p{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   min-height: 100vh;
+}
+#c{
+     
+    background: rgba( 255, 255, 255, 0.3 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 6px );
+    -webkit-backdrop-filter: blur( 6px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    border-radius: 2rem;
+}
+h1{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+form{
+    padding: 4rem 6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+label{
+    margin-left: .5rem;
+    font-size: 1.5rem;
+}
+input,select{
+    margin: .5rem;
+    padding: .3rem;
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+    outline: none;
+    border-radius: 1rem;
+}
+#btn{
+    border:none;
+    margin-top: 1rem;
+}
+#btn:hover{
+    background-image: linear-gradient(to right, blue,yellow);
+    cursor: pointer;
+}
